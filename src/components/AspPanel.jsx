@@ -18,9 +18,9 @@ export function AspPanel({ output, view }) {
   };
 
   const html = htmlMap[view];
-  return (
-    <div className="asp-panel" dangerouslySetInnerHTML={{ __html: html || '' }}>
-      {!html && emptyState(view.toLowerCase())}
-    </div>
-  );
+  if (html) {
+    return <div className="asp-panel" dangerouslySetInnerHTML={{ __html: html }} />;
+  }
+
+  return <div className="asp-panel">{emptyState(view.toLowerCase())}</div>;
 }
