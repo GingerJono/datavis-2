@@ -1,8 +1,8 @@
 :root {
   color-scheme: light;
   font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  background: #f4f6f8;
-  color: #0c2033;
+  background: #f6f7fb;
+  color: #0f172a;
 }
 
 * {
@@ -11,62 +11,109 @@
 
 body {
   margin: 0;
-  background: #f4f6f8;
+  background: radial-gradient(circle at 10% 20%, #ebf4ff 0, transparent 24%),
+    radial-gradient(circle at 90% 10%, #e3fafc 0, transparent 22%),
+    #f6f7fb;
   min-height: 100vh;
 }
 
 .page {
-  max-width: 1180px;
-  margin: 0 auto 32px;
-  padding: 12px 12px 22px;
+  max-width: 1200px;
+  margin: 0 auto 64px;
+  padding: 32px 20px 48px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: linear-gradient(135deg, #0c325c, #145ea8);
+  color: #f8fbff;
+  border-radius: 18px;
+  padding: 20px 24px;
+  box-shadow: 0 16px 44px rgba(0, 0, 0, 0.15);
+}
+
+.logo-mark {
+  width: 54px;
+  height: 54px;
+  display: grid;
+  place-items: center;
+  background: #f5f7fb;
+  color: #0c325c;
+  font-weight: 800;
+  border-radius: 14px;
+  letter-spacing: 1px;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-weight: 700;
+  font-size: 12px;
+  margin: 0 0 4px;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 22px;
+}
+
+.pill {
+  margin-left: auto;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 8px 16px;
+  border-radius: 999px;
+  font-weight: 700;
+  background: rgba(255, 255, 255, 0.12);
 }
 
 .nav-tabs {
   display: flex;
   flex-wrap: wrap;
-  gap: 6px;
-  margin: 6px 0 6px;
+  gap: 8px;
+  margin: 20px 0 10px;
 }
 
 .tab {
   background: #ffffff;
-  border: 1px solid #d8e0ea;
-  border-radius: 5px;
-  padding: 7px 11px;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 10px 14px;
   font-weight: 600;
-  color: #1f2f43;
-  box-shadow: 0 2px 8px rgba(12, 32, 51, 0.05);
+  color: #334155;
+  box-shadow: 0 6px 14px rgba(15, 23, 42, 0.04);
   cursor: pointer;
-  transition: all 0.15s ease;
+  transition: all 0.2s ease;
 }
 
 .tab.active {
-  background: #b07e00;
-  color: #fffef9;
-  border-color: #b07e00;
-  box-shadow: 0 4px 14px rgba(176, 126, 0, 0.26);
+  background: #0c325c;
+  color: #f8fbff;
+  border-color: #0c325c;
+  box-shadow: 0 8px 24px rgba(12, 50, 92, 0.3);
 }
 
 .context-bar {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
   background: #ffffff;
-  padding: 8px 9px;
-  border-radius: 6px;
-  border: 1px solid #d8e0ea;
-  box-shadow: 0 3px 10px rgba(12, 32, 51, 0.05);
+  padding: 10px 12px;
+  border-radius: 14px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.04);
 }
 
 .toggle-group {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 10px;
 }
 
 .context-label {
   font-weight: 700;
-  color: #0c2033;
+  color: #1f2937;
 }
 
 .toggle-option {

@@ -95,6 +95,15 @@ export default function App() {
 
   return (
     <div className="page">
+      <header className="header">
+        <div className="logo-mark">WRV</div>
+        <div>
+          <p className="eyebrow">Workbench Risk Viewer</p>
+          <h1>Data rich, opinionated view of your programmes</h1>
+        </div>
+        <div className="pill">Risk ID: {riskId}</div>
+      </header>
+
       <TabNavigation tabs={tabs} activeTab={activeTab} onChange={setActiveTab} />
 
       <div className="context-bar">
@@ -113,10 +122,6 @@ export default function App() {
           visible={showAspContext}
         />
         <div className="grow" />
-        <div className="id-chip">
-          <span className="meta-label">Risk ID</span>
-          <strong>{riskId}</strong>
-        </div>
         <MetaStrip programmeRef={programmeData?.meta?.programmeReference} lastUpdated={programmeData?.meta?.lastUpdated} />
       </div>
 
