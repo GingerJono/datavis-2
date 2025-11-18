@@ -17,25 +17,25 @@ body {
 
 .page {
   max-width: 1180px;
-  margin: 0 auto 48px;
-  padding: 18px 16px 32px;
+  margin: 0 auto 32px;
+  padding: 12px 12px 22px;
 }
 
 .nav-tabs {
   display: flex;
   flex-wrap: wrap;
   gap: 6px;
-  margin: 6px 0 8px;
+  margin: 6px 0 6px;
 }
 
 .tab {
   background: #ffffff;
   border: 1px solid #d8e0ea;
-  border-radius: 7px;
-  padding: 8px 12px;
+  border-radius: 5px;
+  padding: 7px 11px;
   font-weight: 600;
   color: #1f2f43;
-  box-shadow: 0 3px 10px rgba(12, 32, 51, 0.06);
+  box-shadow: 0 2px 8px rgba(12, 32, 51, 0.05);
   cursor: pointer;
   transition: all 0.15s ease;
 }
@@ -52,10 +52,10 @@ body {
   align-items: center;
   gap: 10px;
   background: #ffffff;
-  padding: 8px 10px;
-  border-radius: 8px;
+  padding: 8px 9px;
+  border-radius: 6px;
   border: 1px solid #d8e0ea;
-  box-shadow: 0 4px 12px rgba(12, 32, 51, 0.05);
+  box-shadow: 0 3px 10px rgba(12, 32, 51, 0.05);
 }
 
 .toggle-group {
@@ -73,9 +73,9 @@ body {
   display: inline-flex;
   align-items: center;
   gap: 5px;
-  padding: 5px 9px;
-  border-radius: 7px;
-  background: #f2f4f8;
+  padding: 5px 8px;
+  border-radius: 6px;
+  background: #f6f7fa;
   border: 1px solid #d8e0ea;
   cursor: pointer;
 }
@@ -88,11 +88,11 @@ body {
   display: flex;
   align-items: center;
   gap: 12px;
-  padding: 6px 10px;
-  background: linear-gradient(135deg, #0c325c, #0a2648);
+  padding: 6px 9px;
+  background: linear-gradient(135deg, #0c325c, #0b274c);
   color: #f6fbff;
-  border-radius: 8px;
-  min-width: 240px;
+  border-radius: 6px;
+  min-width: 228px;
 }
 
 .meta-label {
@@ -113,9 +113,9 @@ body {
 }
 
 .banner {
-  margin-top: 10px;
-  padding: 10px 12px;
-  border-radius: 8px;
+  margin-top: 8px;
+  padding: 9px 11px;
+  border-radius: 6px;
   font-weight: 600;
   border: 1px solid transparent;
 }
@@ -133,13 +133,13 @@ body {
 }
 
 .tab-content {
-  margin-top: 12px;
+  margin-top: 10px;
 }
 
 .grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 12px;
+  gap: 10px;
 }
 
 .grid.single {
@@ -148,27 +148,27 @@ body {
 
 .panel {
   background: #ffffff;
-  border-radius: 8px;
-  padding: 12px;
+  border-radius: 6px;
+  padding: 10px 11px;
   border: 1px solid #d8e0ea;
-  box-shadow: 0 6px 14px rgba(12, 32, 51, 0.06);
+  box-shadow: 0 5px 12px rgba(12, 32, 51, 0.05);
 }
 
 .panel-head {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 
 .panel h2 {
   margin: 0;
-  font-size: 16px;
+  font-size: 15px;
 }
 
 .chip {
-  background: #fff4e5;
-  padding: 5px 9px;
+  background: #fff1df;
+  padding: 4px 8px;
   border-radius: 999px;
   font-weight: 700;
   color: #8b4a00;
@@ -183,8 +183,8 @@ body {
   display: inline-flex;
   flex-direction: column;
   gap: 4px;
-  padding: 6px 9px;
-  border-radius: 7px;
+  padding: 5px 8px;
+  border-radius: 6px;
   border: 1px solid #d8e0ea;
   background: #ffffff;
   box-shadow: 0 3px 8px rgba(12, 32, 51, 0.05);
@@ -193,7 +193,7 @@ body {
 
 .table-shell {
   border: 1px solid #d8e0ea;
-  border-radius: 8px;
+  border-radius: 6px;
   overflow: hidden;
 }
 
@@ -201,7 +201,7 @@ body {
 .table-row {
   display: grid;
   grid-template-columns: 1fr 1.6fr 0.8fr 0.8fr;
-  padding: 8px 10px;
+  padding: 8px 9px;
   align-items: center;
 }
 
@@ -226,19 +226,19 @@ body {
 .empty-state {
   background: #f8fafc;
   border: 1px dashed #d8e0ea;
-  border-radius: 8px;
-  padding: 28px;
+  border-radius: 6px;
+  padding: 22px;
   text-align: center;
   color: #475569;
 }
 
 .placeholder {
   text-align: center;
-  padding: 40px;
+  padding: 34px;
   background: #ffffff;
-  border-radius: 8px;
+  border-radius: 6px;
   border: 1px dashed #d8e0ea;
-  box-shadow: 0 6px 12px rgba(12, 32, 51, 0.05);
+  box-shadow: 0 5px 11px rgba(12, 32, 51, 0.05);
 }
 
 .placeholder h2 {
@@ -248,15 +248,15 @@ body {
 .asp-panel {
   min-height: 240px;
   background: linear-gradient(135deg, #f9fbff, #f4f6fb);
-  border-radius: 8px;
-  padding: 12px;
+  border-radius: 6px;
+  padding: 11px;
   border: 1px solid #d8e0ea;
 }
 
 .asp-panel .asp-block {
   background: #ffffff;
-  padding: 12px;
-  border-radius: 7px;
+  padding: 11px;
+  border-radius: 6px;
   border: 1px solid #d8e0ea;
   box-shadow: 0 4px 10px rgba(12, 32, 51, 0.05);
 }
@@ -267,7 +267,7 @@ body {
 
 .asp-links {
   display: grid;
-  gap: 8px;
+  gap: 6px;
 }
 
 .asp-links a {
